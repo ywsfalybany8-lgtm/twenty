@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل بطولة تونتي - Rocket League</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #0f1216; color: #fff; margin:0; padding:0; }
+        .container { max-width: 800px; margin: auto; padding: 20px; }
+        h1 { text-align: center; color: #0078F2; }
+        .form-group { margin-bottom: 15px; }
+        label { display:block; margin-bottom:5px; }
+        input, select { width:100%; padding:10px; border-radius:5px; border:none; }
+        button { width:100%; padding:15px; background:#FF8D1B; color:#fff; border:none; border-radius:50px; font-size:16px; cursor:pointer; }
+        button:hover { background:#FFA34D; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>تسجيل فريقك في بطولة تونتي</h1>
+
+        <form method="POST" action="https://script.google.com/macros/s/AKfycbw0gW_apddKrQgNSwY1dUfPwH9eFILHf1KWYqgzuvl7jLV8XIKyWRPccnTPHKncB-ZoTA/exec">
+
+            <div class="form-group">
+                <label>اسم الفريق</label>
+                <input type="text" name="teamName" required placeholder="مثال: أساطير الصواريخ">
+            </div>
+
+            <div class="form-group">
+                <label>ديسكورد الكابتن</label>
+                <input type="text" name="discordCaptain" required placeholder="Username#1234">
+            </div>
+
+            <div class="form-group">
+                <label>البريد الإلكتروني</label>
+                <input type="email" name="emailCaptain" required placeholder="example@email.com">
+            </div>
+
+            <div class="form-group">
+                <label>متوسط رانك الفريق</label>
+                <select name="teamRank">
+                    <option>برونز</option>
+                    <option>سيلفر</option>
+                    <option>غولد</option>
+                    <option>بلاتينيوم</option>
+                    <option>دايموند</option>
+                    <option>تشامبيون</option>
+                    <option>جراند تشامبيون</option>
+                    <option>سوبر سونيك ليجند</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>قائمة اللاعبين</label>
+                <input type="text" name="playerList" placeholder="معرف اللاعب الثاني، الثالث...">
+            </div>
+
+            <button type="submit">إرسال التسجيل</button>
+        </form>
+    </div>
+</body>
+</html>
